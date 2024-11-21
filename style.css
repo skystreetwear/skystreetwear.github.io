@@ -59,7 +59,7 @@ ul {
 }
 
 .hero-content {
-    outline: 2px solid #f1f1f1; /* Ganti warna dan ketebalan sesuai keinginan */
+    outline: 2px solid #d1cece; /* Ganti warna dan ketebalan sesuai keinginan */
     display: inline-block;
     padding: 5px;
 }
