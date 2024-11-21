@@ -77,3 +77,15 @@ function initMap() {
 
     infoWindow.open(map, marker); // Automatically show info on load
 }
+
+document.addEventListener('DOMContentLoaded', () => {
+    const burger = document.getElementById('burger');
+    const navLinks = document.getElementById('nav-links');
+
+    burger.addEventListener('click', () => {
+        // Toggle classes
+        navLinks.classList.toggle('show');
+        burger.classList.toggle('toggle');
+    });
+});
+
