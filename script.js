@@ -8,11 +8,11 @@ document.addEventListener('DOMContentLoaded', () => {
         let scrollAmount = 0;
 
         nextBtn.addEventListener('click', () => {
-            carouselContainer.scrollBy({ left: 350, behavior: 'smooth' });
+            carouselContainer.scrollBy({ left: 250, behavior: 'smooth' });
         });
 
         prevBtn.addEventListener('click', () => {
-            carouselContainer.scrollBy({ left: -350, behavior: 'smooth' });
+            carouselContainer.scrollBy({ left: -250, behavior: 'smooth' });
         });
     }
 });
