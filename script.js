@@ -29,3 +29,51 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 });
+
+// maps
+// Initialize Google Maps for Maps Page
+function initMap() {
+    const storeLocation = { lat: -6.2088, lng: 106.8456 }; // Contoh lokasi di Jakarta
+    const map = new google.maps.Map(document.getElementById('map'), {
+        zoom: 15,
+        center: storeLocation,
+        styles: [
+            {
+                featureType: 'all',
+                stylers: [{ saturation: -80 }]
+            },
+            {
+                featureType: 'road.arterial',
+                elementType: 'geometry',
+                stylers: [{ hue: '#00ffee' }, { saturation: 50 }]
+            },
+            {
+                featureType: 'poi.business',
+                elementType: 'labels',
+                stylers: [{ visibility: 'off' }]
+            }
+        ]
+    });
+
+    const marker = new google.maps.Marker({
+        position: storeLocation,
+        map: map,
+        title: 'Streetwear Store'
+    });
+
+    const infoWindow = new google.maps.InfoWindow({
+        content: `
+            <div style="text-align: center;">
+                <h3>Streetwear Store</h3>
+                <p>Your go-to destination for urban fashion!</p>
+                <p><strong>Address:</strong> Jl. Streetwear No.123, Jakarta</p>
+            </div>
+        `
+    });
+
+    marker.addListener('click', () => {
+        infoWindow.open(map, marker);
+    });
+
+    infoWindow.open(map, marker); // Automatically show info on load
+}
