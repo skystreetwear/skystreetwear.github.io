@@ -62,7 +62,6 @@ ul {
     align-items: center;
     background: url('hero.jpg') no-repeat center center/cover;
     text-align: center;
-    flex: 1;
 }
 
 .hero-content {
