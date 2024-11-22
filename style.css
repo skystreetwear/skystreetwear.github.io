@@ -101,6 +101,7 @@ ul {
     position: relative;
     padding: 20px;
     text-align: center;
+    flex: 1;
 }
 
 .carousel-container {
@@ -164,6 +165,7 @@ ul {
 #contact {
     padding: 40px 20px;
     text-align: center;
+    flex: 1;
 }
 
 #contact h2 {
@@ -210,6 +212,7 @@ ul {
 #map-section {
     padding: 40px 20px;
     text-align: center;
+    flex: 1;
 }
 
 #map-section h2 {
