@@ -190,7 +190,7 @@ ul {
     padding: 10px;
     cursor: pointer;
     border-radius: 5px;
-    transition: background: 0.3s;
+    transition: background 0.3s;
 }
 
 #contact-form button:hover {
@@ -300,4 +300,14 @@ footer {
     text-align: center;
     background: #222;
     color: white;
+}
+
+footer .social-links {
+    margin-top: 10px;
+}
+
+footer .social-links a {
+    color: white;
+    margin: 0 10px;
+    font-size: 1.5em;
 }
