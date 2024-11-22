@@ -59,9 +59,9 @@ ul {
 }
 
 .hero-content {
-filter: blur(2px);
-border: none;
-padding: 10px 20px;
+    background: #fff;
+    border: none;
+    padding: 10px 20px;
 }
 
 .hero-content h1 {
