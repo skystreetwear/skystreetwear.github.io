@@ -60,6 +60,8 @@ ul {
 
 .hero-content {
 background: #fff;
+border: none;
+padding: 10px 20px;
 }
 
 .hero-content h1 {
