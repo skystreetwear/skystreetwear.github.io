@@ -302,12 +302,25 @@ footer {
     color: white;
 }
 
-footer .social-links {
-    margin-top: 10px;
+.social-icons {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
 }
-
-footer .social-links a {
-    color: white;
-    margin: 0 10px;
-    font-size: 1.5em;
+.social-icons li {
+    display: inline;
+}
+.social-icons a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 24px;
+    transition: color 0.3s ease;
+}
+.social-icons a:hover {
+    color: #00aced;
+}
+.material-icons {
+    vertical-align: middle;
 }
