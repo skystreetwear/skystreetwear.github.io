@@ -59,9 +59,7 @@ ul {
 }
 
 .hero-content {
-    outline: 2px solid #d1cece; /* Ganti warna dan ketebalan sesuai keinginan */
-    display: inline-block;
-    padding: 5px;
+background: #fff;
 }
 
 .hero-content h1 {
@@ -73,7 +71,6 @@ ul {
 
 .hero-content p {
     margin-bottom: 20px;
-    background: #f39c12;
 }
 
 .hero-content .btn-primary {
