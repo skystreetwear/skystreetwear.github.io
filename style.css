@@ -45,7 +45,6 @@ ul {
 }
 
 .navbar ul li a {
-    text-decoration: none;
     color: white;
     transition: color 0.3s;
 }
@@ -60,7 +59,7 @@ ul {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url('hero.jpg') no-repeat center center/cover;
+    background: url(images/boss.jpg) no-repeat center center/cover;
     text-align: center;
     flex: 1;
 }
@@ -75,7 +74,6 @@ ul {
     font-size: 3em;
     margin-bottom: 10px;
     color: #f39c12;
-
 }
 
 .hero-content p {
@@ -96,7 +94,7 @@ ul {
     background: #e67e22;
 }
 
-/* Collection Section */
+/* Collection Section (Carousel) */
 .carousel {
     position: relative;
     padding: 20px;
@@ -120,6 +118,7 @@ ul {
     width: 100%;
     height: 400px;
     border-radius: 10px;
+    object-fit: cover;
 }
 
 .carousel-btn {
@@ -182,7 +181,8 @@ ul {
     margin: 0 auto;
 }
 
-#contact-form input, #contact-form textarea {
+#contact-form input,
+#contact-form textarea {
     padding: 10px;
     border-radius: 5px;
     border: none;
@@ -208,7 +208,7 @@ ul {
     background: #e67e22;
 }
 
-/* maps */
+/* Map Section (Find Us) */
 #map-section {
     padding: 40px 20px;
     text-align: center;
@@ -221,15 +221,6 @@ ul {
     margin-bottom: 20px;
 }
 
-#map {
-    width: 80%;
-    height: 500px;
-    border: 2px solid #f39c12;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-    margin: 0 auto;
-}
-
 iframe {
     border: 2px solid #f39c12;
     border-radius: 10px;
@@ -239,14 +230,9 @@ iframe {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
 }
 
-.hero {
-    background: url(images/boss.jpg);
-    background-size: cover;
-}
-
 /* Burger Menu Styling */
 .burger {
-    display: none; /* Hidden on larger screens */
+    display: none;
     flex-direction: column;
     gap: 5px;
     cursor: pointer;
@@ -267,7 +253,7 @@ iframe {
     }
 
     .nav-links {
-        display: none; /* Hidden initially */
+        display: none;
         flex-direction: column;
         background: #333;
         position: absolute;
@@ -284,7 +270,7 @@ iframe {
     }
 
     .nav-links.show {
-        display: flex; /* Show menu when active */
+        display: flex;
     }
 
     .nav-links ul li a {
@@ -305,7 +291,6 @@ iframe {
     }
 }
 
-
 /* Footer */
 footer {
     padding: 10px 20px;
@@ -315,25 +300,24 @@ footer {
 }
 
 .social-icons {
-    list-style-type: none;
-    padding: 0;
+    list-style: none;
     display: flex;
     justify-content: center;
     gap: 20px;
+    padding: 0;
 }
-.social-icons li {
-    display: inline;
-}
+
 .social-icons a {
-    text-decoration: none;
     color: #fff;
     font-size: 32px;
     transition: transform 0.3s ease, color 0.3s ease;
 }
+
 .social-icons a:hover {
     color: #00aced;
     transform: scale(1.1);
 }
+
 .social-icons svg {
     width: 32px;
     height: 32px;

@@ -1,12 +1,10 @@
-// Carousel Functionality
 document.addEventListener('DOMContentLoaded', () => {
+    // === Carousel Functionality ===
     const carouselContainer = document.querySelector('.carousel-container');
     const prevBtn = document.querySelector('.carousel-btn.prev');
     const nextBtn = document.querySelector('.carousel-btn.next');
 
-    if (carouselContainer) {
-        let scrollAmount = 0;
-
+    if (carouselContainer && prevBtn && nextBtn) {
         nextBtn.addEventListener('click', () => {
             carouselContainer.scrollBy({ left: 300, behavior: 'smooth' });
         });
@@ -15,10 +13,8 @@ document.addEventListener('DOMContentLoaded', () => {
             carouselContainer.scrollBy({ left: -300, behavior: 'smooth' });
         });
     }
-});
 
-// Contact Form Submission
-document.addEventListener('DOMContentLoaded', () => {
+    // === Contact Form Submission ===
     const contactForm = document.querySelector('#contact-form');
 
     if (contactForm) {
@@ -28,12 +24,22 @@ document.addEventListener('DOMContentLoaded', () => {
             contactForm.reset();
         });
     }
+
+    // === Responsive Navbar (Burger Menu) ===
+    const burger = document.getElementById('burger');
+    const navLinks = document.getElementById('nav-links');
+
+    if (burger && navLinks) {
+        burger.addEventListener('click', () => {
+            navLinks.classList.toggle('show');
+            burger.classList.toggle('toggle');
+        });
+    }
 });
 
-// maps
-// Initialize Google Maps for Maps Page
+// === Google Map Initialization (Only if needed) ===
 function initMap() {
-    const storeLocation = { lat: -6.2088, lng: 106.8456 }; // Contoh lokasi di Jakarta
+    const storeLocation = { lat: -6.2088, lng: 106.8456 }; // Contoh: Jakarta
     const map = new google.maps.Map(document.getElementById('map'), {
         zoom: 15,
         center: storeLocation,
@@ -75,17 +81,5 @@ function initMap() {
         infoWindow.open(map, marker);
     });
 
-    infoWindow.open(map, marker); // Automatically show info on load
+    infoWindow.open(map, marker); // Auto open on load
 }
-
-document.addEventListener('DOMContentLoaded', () => {
-    const burger = document.getElementById('burger');
-    const navLinks = document.getElementById('nav-links');
-
-    burger.addEventListener('click', () => {
-        // Toggle classes
-        navLinks.classList.toggle('show');
-        burger.classList.toggle('toggle');
-    });
-});
-
